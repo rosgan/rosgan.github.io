@@ -11,9 +11,10 @@
 <body>
     <a-scene arjs>
         <a-marker preset="hiro">
-            <!-- Plano con imagen agrandada al doble de tamaño -->
+            <!-- Plano que muestra una imagen representativa y redirige al video de YouTube -->
             <a-plane position="0 0 0" rotation="-90 0 0" width="2" height="1.5"
-                     material="shader: flat; src: https://api.rosgannet.com.ar/database/rosgan/kilaje_img.php?remate_id=950&formulario_id=63">
+                     material="shader: flat; src: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Logo_of_YouTube_%282015-2017%29.svg/2560px-Logo_of_YouTube_%282015-2017%29.svg.png"
+                     event-set__click="_target: window; _delay: 0; href: https://www.youtube.com/watch?v=j8ZePW2ay04;">
             </a-plane>
         </a-marker>
         <a-entity camera></a-entity>
